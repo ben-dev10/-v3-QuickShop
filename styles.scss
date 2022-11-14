@@ -1,0 +1,136 @@
+*{ box-sizing: border-box; }
+
+:root{
+
+    /* Light Mode Palette */
+
+    // --background-color: #f4f5ff;
+
+    --nav-big__bgc: #29134E;
+    --nav-small__bgc: #111111;
+    --nav-big__text-color--primary: #fff;
+    --nav-big__text-color--secondary: #B0B0B0 ;
+
+    --footer-grey__bgc: #2F363D;
+    --footer-grey__text-color--primary: #E6E6E6;
+    --footer-grey__text-color--secondary: #B3B3B3 ;
+    --footer-grey__text-color--link: #79B8FF;
+
+    --card__drop-shadow: 0px 1px 17px rgba(143, 168, 255, 0.25);
+    --main__text-color--special: conic-gradient(from 190.25deg at 50% 50%, #1091BA 0deg, rgba(136, 2, 200, 0.97) 28.87deg, #232AD5 218.41deg, #1091BA 360deg);
+        
+
+}
+
+
+// WEB FONTS
+@font-face {
+  font-family: 'Inter-Thin';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./fonts/Inter-Web/Inter-Thin.woff2") format("woff2"),
+       url("./fonts/Inter-Web/Inter-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./fonts/Inter-Web/Inter-Regular.woff2") format("woff2"),
+       url("./fonts/Inter-Web/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./fonts/Inter-Web/Inter-Bold.woff2") format("woff2"),
+       url("./fonts/Inter-Web/Inter-Bold.woff") format("woff");
+}
+
+// Variable font type
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("./fonts/Inter-Web/Inter-roman.var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("./fonts/Inter-Web/Inter-italic.var.woff2") format("woff2");
+}
+
+
+.font-Inter-thin{ font-family: "Inter-Thin";}
+.font-Inter-var{ font-family: "Inter var";}
+.font-Inter-bold{ font-family: "Inter-Bold";}
+.font-Inter-regular{ font-family: "Inter-Regular";}
+
+
+
+body{
+    background-color: var(--background-color);
+    margin: 0px;
+    font-family: 'Inter-Thin';
+
+}
+
+.text-grey-1{ color: var(--nav-big__text-color--primary)}
+.text-grey-2{ color: var(--nav-big__text-color--secondary)}
+.text-grey-body{ color: var(--nav-big__text-color--primary)}
+
+
+.text-color--special{
+    background: var(--main__text-color--special);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
+}
+
+
+
+
+
+// Main document styles
+
+
+nav.nav-big{
+    width: 100%;
+    height: 60px;
+
+    background-color: var(--nav-big__bgc);
+
+
+
+    .nav-big__logo{
+       
+
+        .logo-container{
+            width: 150px;
+            height: 110px;
+            background-image: url('./imgs/quickshop-logo-white.png');
+            background-size: cover;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QuickShop </title>
+
+    <link rel="stylesheet" href="./css/quick.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="./fonts/material-icons/iconfont/material-icons.css" rel="stylesheet">
+
+    <!-- Link for favicon -->
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+
+    <!-- 3 main boxes; header, main & footer -->
+
+
+    <!-- HEADER -->
+    <header>
+        <nav class="laptop nav-big p-2 m-0 flex align-center justify-between text-grey-1 text-xxs ">
+
+            <div class="nav-big__logo flex align-center justify-center">
+                <a href="./index.html">
+                    <div class="logo-container p-1" title="QuickShop.com"> </div>
+                </a>
+            </div>
+
+
+            <div class="nav-big__location pr-3 pl-2 flex">
+                <img src="./svgs/location-16.svg" alt="location-icon" class="icon" style="padding-right: 8px">
+
+                <p class="" style="margin: 5px"> Deliver to, <br>
+                    <span class="font-700 text-grey-2 text-xs"> Ghana </span>
+                </p>
+            </div>
+
+            <form class="search-bar-main flex">
+                <select name="search-category" class="search-bar__select text-xs">
+                    <option value=""> All </option>
+                    <option value=""> Books </option>
+                    <option value=""> Baby </option>
+                    <option value=""> Food </option>
+                </select>
+
+                <input type="text" class="search " title="Search" placeholder="Search here...">
+
+                <button type="submit" class="search-button" title="Search Site">
+                    <i class="material-icons">search</i>
+                </button>
+            </form>
+
+            <div class="nav-big__country pr-2 pl-2 flex">
+                <div class="chevron-wrapper grid-center" style="padding-right: 5px; padding-top: 3px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                        <path
+                            d="M4.29655 5.30376C4.68622 5.68944 5.31378 5.68944 5.70345 5.30376L9.33371 1.71074C9.96868 1.08228 9.52365 0 8.63025 0H1.36974C0.476352 0 0.0313213 1.08228 0.666293 1.71074L4.29655 5.30376Z"
+                            fill="#CCCCCC" />
+                    </svg>
+                </div>
+                <div class="country-flag-wrapper grid-center">
+                    <img src="./svgs/flag.svg" alt="country flag" class="country-flag">
+                </div>
+            </div>
+
+            <div class="nav-big__account pr-2 pl-2">
+                <p class="" style="margin: 2px;"> Hello, Sign in <br>
+                    <span class="font-700 text-grey-2 text-xs"> Accounts and Lists </span>
+                </p>
+            </div>
+
+            <div class="nav-big__cart pr-2 pl-2 flex align-center">
+                <div class="cart-wrapper flex align-center" style="float:left">
+                    <i class="material-icons">shopping_cart</i>
+                    <p class="cart-count"> 0 </p>
+                </div>
+                <span class="font-700 text-xs"> Cart </span>
+            </div>
+
+        </nav>
+
+        <nav class="laptop nav-small flex align-center text-xxs">
+
+            <button onclick="toggleView()" type='button' class="nav-small--menu-button flex align-center "
+                id="nav-button">
+                <i class="material-icons" style="font-size: 18px;" id="bars-icon">menu</i>
+                <p style="padding-left:5px; margin-top: 5px; margin-bottom: 5px" class="text-xxs" id="btn-p">All</p>
+            </button>
+
+            <div class="all-menu flex hidden" id="allMenu">
+                <ul class="">
+                    <li class="header">Categories</li>
+                    <li> Cars </li>
+                    <li> Baby products </li>
+                    <li> Gaming </li>
+                    <li> Food & Snacks </li>
+                    <li> Clothing </li>
+                </ul>
+            </div>
+
+            <div class="nav-small--links">
+                <a href="#" class="nav-links" id="00"> Today's deals </a>
+                <a href="#" class="nav-links" id="00"> Customer Service</a>
+                <a href="#" class="nav-links" id="00"> Registry </a>
+                <a href="#" class="nav-links" id="00"> Sell </a>
+                <a href="./pages/about.html" class="" style=""> Learn more </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <div class="laptop hero-image-wrapper">
+        <img src="./imgs/hero-image-(4).jpg" alt="hero-image" class="hero-image">
+    </div>
+
+    <main class="laptop flex flex-col flex-center justify-center align-center ">
+
+        <section class="cards-group-1 flex">
+
+            <div class="card flex flex-col br-1">
+                <div class="card-head">
+                    <h3 class="card-heading" style="padding-left: 15px"> Gaming Accessory </h3>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(1).jpg" alt='product-image'>
+                        <p class="img-label"> Logitech Mouse </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(10).jpg" alt='product-image'>
+                        <p class="img-label"> Kettle </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(3).jpg" alt='product-image'>
+                        <p class="img-label"> Samsung Galaxy </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(4).jpg" alt='product-image'>
+                        <p class="img-label"> Flip 4 </p>
+                    </a>
+
+                </div>
+
+                <div class="card-footer">
+                    <p> See more </p>
+                </div>
+            </div>
+
+            <div class="card flex flex-col br-1">
+                <div class="card-head">
+                    <h3 class="card-heading" style="padding-left: 15px"> Gaming Accessory </h3>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(5).jpg" alt='product-image'>
+                        <p class="img-label"> Headset </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(6).jpg" alt='product-image'>
+                        <p class="img-label"> Headset </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(13).jpg" alt='product-image'>
+                        <p class="img-label"> Headset </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(9).jpg" alt='product-image'>
+                        <p class="img-label"> Headset </p>
+                    </a>
+
+                </div>
+
+                <div class="card-footer">
+                    <p> See more </p>
+                </div>
+            </div>
+
+            <div class="card flex flex-col br-1">
+                <div class="card-head">
+                    <h3 class="card-heading" style="padding-left: 15px"> Gaming Accessory </h3>
+                </div>
+
+                <div class="card-body">
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(14).jpg" alt='product-image'>
+                        <p class="img-label"> Headset </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(15).jpg" alt='product-image'>
+                        <p class="img-label"> Phone </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(16).jpg" alt='product-image'>
+                        <p class="img-label"> Books </p>
+                    </a>
+
+                    <a href="#" class="link-image flex flex-col">
+                        <img src="./imgs/product-images/product-image-(17).jpg" alt='product-image'>
+                        <p class="img-label"> Tablet </p>
+                    </a>
+
+                </div>
+
+                <div class="card-footer">
+                    <p> See more </p>
+                </div>
+            </div>
+
+            <aside class="special-cards-1 flex flex-col">
+                <div class="sign-in-card br-3">
+                    <h3 class="special-text text-color--special" style="margin-top:5px"> Sign in for the best experience
+                    </h3>
+                    <button class="sign-in font-700"> Sign in </button>
+                </div>
+
+                <div class="promo-card br-3">
+                </div>
+            </aside>
+
+        </section>
+
+        <aside class="divider flex justify-center align-center">
+            <h3 class="divider-text"> Consumer Electronics </h3>
+            <div class="divider-bar"></div>
+        </aside>
+
+        <section class="carousel">
+            <h3 class=""> Top Sellers in Laptop products for you </h3>
+            <div class="carousel-1 flex">
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (2).jpg" alt="item image" class="carousel-image">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (4).jpg" alt="item image" class="carousel-image">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (5).jpg" alt="item image" class="carousel-image">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (6).jpg" alt="item image" class="carousel-image">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (7).jpg" alt="item image" class="carousel-image">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (8).jpg" alt="item image" class="carousel-image">
+                </a>
+                <a href="#" class="carousel-item">
+                    <img src="./imgs/laptops/laptop (9).jpg" alt="item image" class="carousel-image">
+                </a>
+            </div>
+        </section>
+
+
+        <aside class="divider flex justify-center align-center">
+            <h3 class="divider-text"> Just for you </h3>
+            <div class="divider-bar"></div>
+        </aside>
+
+
+        <section class="cards-group-2 flex">
+
+            <div class="card-mini flex flex-col align-center br-1">
+                <div class="image-box">
+                    <a href="#">
+                        <img class='br-1 card-mini-img' src="./imgs/product-images/product-image-(21).jpg"
+                            alt="product-image" style="width: 145px; height: 145px;">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#" class="product-link text-xxs"> Low price, cheap, affordable and premium </a>
+
+                    <b>
+                        <p class="price text-xs"> $11.52 - $11.82 </p>
+                    </b>
+                    <p class="price text-xxs"> 103 metric tons (min-order)</p>
+
+                </div>
+
+            </div>
+
+            <div class="card-mini flex flex-col align-center br-1">
+                <div class="image-box">
+                    <a href="#">
+                        <img class='br-1 card-mini-img' src="./imgs/product-images/product-image-(22).jpg"
+                            alt="product-image" style="width: 145px; height: 145px;">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#" class="product-link text-xxs"> Low price, cheap, affordable and premium </a>
+
+                    <b>
+                        <p class="price text-xs"> $11.52 - $11.82 </p>
+                    </b>
+                    <p class="price text-xxs"> 103 metric tons (min-order)</p>
+
+                </div>
+
+            </div>
+
+            <div class="card-mini flex flex-col align-center br-1">
+                <div class="image-box">
+                    <a href="#">
+                        <img class='br-1 card-mini-img' src="./imgs/product-images/product-image-(23).jpg"
+                            alt="product-image" style="width: 145px; height: 145px;">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#" class="product-link text-xxs"> Low price, cheap, affordable and premium </a>
+
+                    <b>
+                        <p class="price text-xs"> $11.52 - $11.82 </p>
+                    </b>
+                    <p class="price text-xxs"> 103 metric tons (min-order)</p>
+
+                </div>
+
+            </div>
+
+            <div class="card-mini flex flex-col align-center br-1">
+                <div class="image-box">
+                    <a href="#">
+                        <img class='br-1 card-mini-img' src="./imgs/product-images/product-image-(24).jpg"
+                            alt="product-image" style="width: 145px; height: 145px;">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#" class="product-link text-xxs"> Low price, cheap, affordable and premium </a>
+
+                    <b>
+                        <p class="price text-xs"> $11.52 - $11.82 </p>
+                    </b>
+                    <p class="price text-xxs"> 103 metric tons (min-order)</p>
+
+                </div>
+
+            </div>
+
+            <div class="card-mini flex flex-col align-center br-1">
+                <div class="image-box">
+                    <a href="#">
+                        <img class='br-1 card-mini-img' src="./imgs/product-images/product-image-(26).jpg"
+                            alt="product-image" style="width: 145px; height: 145px;">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#" class="product-link text-xxs"> Low price, cheap, affordable and premium </a>
+
+                    <b>
+                        <p class="price text-xs"> $11.52 - $11.82 </p>
+                    </b>
+                    <p class="price text-xxs"> 103 metric tons (min-order)</p>
+
+                </div>
+
+            </div>
+            <div class="card-mini flex flex-col align-center br-1">
+                <div class="image-box">
+                    <a href="#">
+                        <img class='br-1 card-mini-img' src="./imgs/product-images/product-image-(25).jpg"
+                            alt="product-image" style="width: 145px; height: 145px;">
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#" class="product-link text-xxs"> Low price, cheap, affordable and premium </a>
+
+                    <b>
+                        <p class="price text-xs"> $11.52 - $11.82 </p>
+                    </b>
+                    <p class="price text-xxs"> 103 metric tons (min-order)</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <aside class="divider mt-4 flex justify-center align-center">
+            <h3 class="divider-text"> Trade Services </h3>
+            <div class="divider-bar"></div>
+        </aside>
+
+
+        <section class="cards-group-3">
+            <div class="card-long br-1">
+                <div class="img-box-2">
+                    <span> Trade Assurance is a a free order Protection
+                        offered by QuickShop
+                    </span>
+                </div>
+                <div class="text-box-2">
+                    <b>
+                        <p class="">Trade Assurance</p>
+                    </b>
+                    <p class="">Order Protection</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <h1 class="font-Inter-thin font-italic"> Top Sellers in Laptop products for you </h1>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <a href='#' class="to-top text-xs"> Back to top </a>
+    <footer class="laptop text-xs">
+        <section class="footer-grey flex flex-center justify-center align-baseline">
+            <div class="about">
+                <h3 class="footer-heading"> About </h3>
+                <p> This is just a personal project </p>
+                <a href="./about.html" class="footer-cta" style="text-decoration: underline"> Learn more </a>
+            </div>
+
+            <div class="contact">
+                <h3 class="footer-heading"> Contact </h3>
+                <a href="#" class="contact-details"> Email </a>
+                <a href="#" class="contact-details"> Twitter </a>
+                <a href="#" class="contact-details"> Instagram </a>
+            </div>
+
+            <div class="countryAndcurrency">
+                <h3 class="footer-heading"> Country & Currency </h3>
+                <p href="#"> Select your country and currency </p>
+                <div class="flex" style="column-gap: 10px;">
+                    <button class="currency-select-menu flex align-center">
+                        <p> <span class="currency-symbol"> $ </span> US Dollar </p>
+                        <img src="./svgs/chevron.svg" alt="chevron-svg" class="icon" style="">
+                    </button>
+
+                    <button class="country-select-menu flex align-center">
+                        <img src="./svgs/chevron-down.svg" alt="chevron-down-svg" class="icon" style="">
+                        <p> US </p>
+                        <div class="country-flag-wrapper">
+                            <img src="./svgs/flag.svg" alt="country flag" class="country-flag">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-dark flex flex-center align-center align-baseline flex-col">
+            <div class="flex area-1">
+                <div class="resources">
+                    <h3 class="footer-heading"> Resources </h3>
+                    <a href="#" class="reource-details"> Portfolio </a>
+                    <a href="#" class="reource-details"> Figma files </a>
+                    <a href="#" class="reource-details"> GitHub Repository </a>
+                </div>
+
+                <div class="other-projects">
+                    <h3 class="footer-heading"> Other Projects </h3>
+                    <p style="margin: 4px 4px"> Letter Editor </p>
+                    <p style="margin: 4px 4px"> Digital Library </p>
+
+                </div>
+            </div>
+
+            <div class="copyright flex align-center">
+                <a href="#" class="reource-details" style="text-decoration: underline"> Privacy Policy </a>
+                <a href="#" class="reource-details" style="text-decoration: underline"> Conditions of Use </a>
+                <p> &copy; 2022, QuickShop Inc, </p>
+            </div>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
